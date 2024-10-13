@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { HistoryPageComponent } from './pages/history-page/history-page.component';
+import { NoFoundPageComponent } from './pages/no-found-page/no-found-page.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { HistoryPageComponent } from './pages/history-page/history-page.componen
     DashboardPageComponent,
     AboutPageComponent,
     HistoryPageComponent,
+    NoFoundPageComponent,
   ],
   imports: [
     BrowserModule,
