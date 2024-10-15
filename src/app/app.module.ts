@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import { NoFoundPageComponent } from './pages/no-found-page/no-found-page.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NoFoundPageComponent } from './pages/no-found-page/no-found-page.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule
+    PagesModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
