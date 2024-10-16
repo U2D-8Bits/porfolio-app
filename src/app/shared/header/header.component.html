@@ -6,18 +6,17 @@
     </a>
   </div>
 
-  <nav class="navbar">
+  <nav *ngIf="!isMobile" class="navbar">
     <ul>
-      <li class="">
-        <a routerLink="./dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">Dashboard</a>
-      </li>
-      <li class="">
-        <a routerLink="./history" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">History</a>
-      </li>
-      <li class="">
-        <a routerLink="./about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">About</a>
+      <li *ngFor="let menu of menuService.menu">
+        <a [routerLink]="menu.routerLink" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true}">{{ menu.label }}</a>
       </li>
     </ul>
   </nav>
+
+  <div *ngIf="isMobile" #floatingMenu class="card flex justify-content-center">
+    <p-menu #menu [model]="menuItems" [popup]="true" />
+    <p-button [text]="true" severity="secondary" (onClick)="menu.toggle($event)" icon="pi pi-bars"/>
+  </div>
 
 </header>

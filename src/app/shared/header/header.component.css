@@ -16,8 +16,8 @@
 .titleName a{
   color: white;
   text-decoration: none;
-  font-family: var(--poppins)
-  font-weight: var(--font-extrabold);
+  font-family: var(--poppins);
+  font-weight: var(--font-semibold);
 }
 
 .navbar{
@@ -46,5 +46,13 @@
 }
 
 .active{
+  color: #7127BA;
+}
+
+::ng-deep .p-button{
+  color: white;
+}
+
+::ng-deep .p-button:hover{
   color: #7127BA;
 }
