@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
-import { RouterModule } from '@angular/router';
+import { RouterLinkActive, RouterModule } from '@angular/router';
 import { PrimengModule } from '../primeng/primeng.module';
 
 
@@ -13,7 +13,8 @@ import { PrimengModule } from '../primeng/primeng.module';
   imports: [
     CommonModule,
     RouterModule,
-    PrimengModule
+    PrimengModule,
+    RouterLinkActive
   ],
   exports:[
     HeaderComponent
