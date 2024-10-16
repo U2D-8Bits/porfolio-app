@@ -8,9 +8,43 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo{
-  width: 75px;
-  height: 75px;
+.titleName{
+  color: white;
+  font-size: 1.5rem;
+}
 
-  border-radius: 50%;
+.titleName a{
+  color: white;
+  text-decoration: none;
+  font-family: var(--poppins)
+  font-weight: var(--font-extrabold);
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar li{
+  list-style: none;
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-family: var(--poppins);
+}
+
+.navbar a:hover{
+  color: #7127BA;
+}
+
+.active{
+  color: #7127BA;
 }
