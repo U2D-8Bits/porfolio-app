@@ -10,12 +10,7 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: PagesComponent,
-    children: [
-      { path: '', component: DashboardPageComponent, data: { title: 'Dashboard' } },
-      { path: 'about', component: AboutPageComponent, data: { title: 'About' } },
-      { path: 'history', component: HistoryPageComponent, data: { title: 'History' } },
-      { path: '**', redirectTo: '' }
-    ]
+    loadChildren: () => import('./child-routes-routing.module').then(m => m.ChildRoutesRoutingModule)
   }
 
 ];
