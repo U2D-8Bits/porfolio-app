@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesModule } from './pages/pages.module';
 import { NoFoundPageComponent } from './pages/no-found-page/no-found-page.component';
 import { RouterModule } from '@angular/router';
@@ -17,7 +17,8 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
