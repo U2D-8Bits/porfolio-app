@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { RouterLinkActive, RouterModule } from '@angular/router';
 import { PrimengModule } from '../primeng/primeng.module';
+import { FooterComponent } from './footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { PrimengModule } from '../primeng/primeng.module';
     RouterLinkActive
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
