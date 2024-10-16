@@ -1,22 +1,23 @@
 import { Injectable } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
 
-  menu: any[] = [
+  menu: MenuItem[] = [
     {
-      title: 'Dashboard',
-      route: './dashboard',
+      label: 'Dashboard',
+      routerLink: './dashboard',
     },
     {
-      title: 'History',
-      route: './history',
+      label: 'History',
+      routerLink: './history',
     },
     {
-      title: 'About',
-      route: './about',
+      label: 'About',
+      routerLink: './about',
     }
   ]
 
