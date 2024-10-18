@@ -20,7 +20,7 @@
 
 .sub-title{
   font-size: 25px;
-  margin-bottom: 0;
+  padding: 20px 0px;
   font-family: var(--poppins);
 }
 
@@ -37,12 +37,10 @@
   font-family: var(--poppins);
 }
 
-/* .history-container debe tener el diseño de un card con un color que se diferencie del fondo que es #11071F y encaje con letras blancas */
 .history-container{
   padding: 0px 50px;
   background-color: #1A1A1A;
   border-radius: 10px;
-  margin-top: 20px;
 }
 
 .paragraph-container{
@@ -57,7 +55,6 @@
   margin-bottom: 30px;
   text-align: justify;
 }
-
 
 /* Diseño responsivo para dispositivos móviles */
 @media (max-width: 768px) {
